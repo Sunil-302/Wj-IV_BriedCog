@@ -1,4 +1,4 @@
-Feature: verifying the login add examinee and add examiner features
+Feature: verifying the Wj4 Brief Cog features
 
   @first
   Scenario: Login to Wj4 BriedCog product

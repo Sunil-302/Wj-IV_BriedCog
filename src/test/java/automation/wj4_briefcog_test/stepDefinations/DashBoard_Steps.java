@@ -1,5 +1,7 @@
 package automation.wj4_briefcog_test.stepDefinations;
 
+import static org.testng.Assert.assertEquals;
+
 import automation.wj4_briefcog_test.utilities.DriverFactory;
 import io.cucumber.java.en.When;
 
@@ -9,6 +11,8 @@ public class DashBoard_Steps extends DriverFactory {
 	public void i_will_click_on_the_and_then_then_i_will_be_at_locations_page(String string, String string2) {
 		
 		appUtil.selctHeaderOption(string, string2);
+		assertEquals(appUtil.getTitleofThePage(),"Locations");
+		
 	    
 	}
 
