@@ -22,10 +22,7 @@ public class PropertyFileUtils {
 	public static HashMap<String, String> globalProp = new HashMap<>();
 	
 	public static ArrayList<String> keyList = new ArrayList<>();
-	public static ArrayList<String> valueList = new ArrayList<>();
-	
-	
-	
+	public static ArrayList<String> valueList = new ArrayList<>();	
 	
 	
 

@@ -1,10 +1,27 @@
 package automation.wj4_briefcog_test.utilities;
 
-public class AppUtil {
+import org.openqa.selenium.By;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+public class AppUtil extends DriverFactory {
+	
+	
 
+	
+		//manage selection
+		
+		public void selctHeaderOption(String parent,String child){
+			
+			letsWait(2000);
+			
+			getDriver().findElement(By.xpath("//button[@aria-label='"+parent+"']")).click();//Organization Management
+			letsWait(1000);
+			getDriver().findElement(By.xpath("//button[text()='"+child+"']")).click();//Locations
+			letsWait(2000);		
+		
+		
+		
+		
+		
 	}
 
 }

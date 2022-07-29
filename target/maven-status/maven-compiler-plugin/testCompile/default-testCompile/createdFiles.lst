@@ -1,0 +1,5 @@
+automation\wj4_briefcog_test\stepDefinations\login_Steps.class
+automation\wj4_briefcog_test\runner\testNG_TestRunner.class
+automation\wj4_briefcog_test\runner\Failed_testNG_TestRunner.class
+automation\wj4_briefcog_test\stepDefinations\DashBoard_Steps.class
+automation\wj4_briefcog_test\stepDefinations\Hooks.class

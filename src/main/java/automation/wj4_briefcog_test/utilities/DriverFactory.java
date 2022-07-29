@@ -6,7 +6,7 @@ import java.util.HashMap;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 
-import automation.wj4_briefcog_test.pageObjects.LoginDashboard_page;
+import automation.wj4_briefcog_test.pageObjects.Login_page;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 
@@ -18,7 +18,8 @@ public class DriverFactory  {
 	public static  PropertyFileUtils pUtil = new PropertyFileUtils();
 	
 	//Object calling
-	public static LoginDashboard_page LoginDashboardPage;
+	public static Login_page LoginDashboardPage;
+	public static AppUtil appUtil;
 
 	//Constructer
 	public DriverFactory(){
@@ -74,7 +75,8 @@ public class DriverFactory  {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Long.parseLong(implicitWait)));
 		
 		//Page factory initialization for pages
-		LoginDashboardPage = PageFactory.initElements(getDriver(), LoginDashboard_page.class);
+		LoginDashboardPage = PageFactory.initElements(getDriver(), Login_page.class);
+		appUtil = PageFactory.initElements(getDriver(), AppUtil.class);
 		
 		
 		
