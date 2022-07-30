@@ -1,43 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-29T15:26:02 IST" name="Default suite" finished-at="2022-07-29T15:26:25 IST" duration-ms="23213">
+  <suite started-at="2022-07-29T23:56:47 IST" name="Default suite" finished-at="2022-07-29T23:56:49 IST" duration-ms="1260">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@477b4cdf]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@cecf639]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2022-07-29T15:26:02 IST" name="Default test" finished-at="2022-07-29T15:26:25 IST" duration-ms="23213">
+    <test started-at="2022-07-29T23:56:47 IST" name="Default test" finished-at="2022-07-29T23:56:49 IST" duration-ms="1260">
       <class name="automation.wj4_briefcog_test.runner.testNG_TestRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@477b4cdf]" started-at="2022-07-29T15:26:02 IST" name="setUpClass" finished-at="2022-07-29T15:26:03 IST" duration-ms="1245" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@cecf639]" started-at="2022-07-29T23:56:47 IST" name="setUpClass" finished-at="2022-07-29T23:56:48 IST" duration-ms="615" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@55c50f52]]>
+                <![CDATA[org.testng.TestRunner@608fe01f]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@477b4cdf]" started-at="2022-07-29T15:26:03 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-29T15:26:25 IST" duration-ms="21255" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@cecf639]" started-at="2022-07-29T23:56:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-29T23:56:48 IST" duration-ms="193" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login to Wj4 BriedCog product"]]>
+                <![CDATA["Drive the brezza car"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["verifying the login add examinee and add examiner features"]]>
+                <![CDATA["i want o check and or wrt tags"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@477b4cdf]" started-at="2022-07-29T15:26:25 IST" name="tearDownClass" finished-at="2022-07-29T15:26:25 IST" duration-ms="632" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@cecf639]" started-at="2022-07-29T23:56:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-29T23:56:48 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Drive the brezza car"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["i want o check and or wrt tags"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@cecf639]" started-at="2022-07-29T23:56:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-29T23:56:48 IST" duration-ms="16" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Drive the brezza car"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["i want o check and or wrt tags"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@cecf639]" started-at="2022-07-29T23:56:48 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-07-29T23:56:48 IST" duration-ms="15" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Drive the brezza car"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["i want o check and or wrt tags"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:automation.wj4_briefcog_test.runner.testNG_TestRunner@cecf639]" started-at="2022-07-29T23:56:48 IST" name="tearDownClass" finished-at="2022-07-29T23:56:49 IST" duration-ms="364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

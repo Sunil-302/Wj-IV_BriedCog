@@ -6,8 +6,8 @@
       <class name="automation.wj4_briefcog_test.runner.testNG_TestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="0 1"/>
           <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
         </methods>
       </class> <!-- automation.wj4_briefcog_test.runner.testNG_TestRunner -->
     </classes>

@@ -18,9 +18,9 @@ public class Hooks extends DriverFactory {
 
 		if (driver != null) {
 			if (scenario.isFailed()) {
-				byte[] fileContent=null;
+				byte[] fileContent = null;
 				File sourcePath = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
-				
+
 				try {
 					fileContent = FileUtils.readFileToByteArray(sourcePath);
 				} catch (IOException e) {
@@ -32,9 +32,15 @@ public class Hooks extends DriverFactory {
 			}
 
 		}
+		
+		
 
-		driver.quit();
-		driver = null;
+		if (driver == null) {
+
+		} else if (driver != null) {
+			driver.quit();
+			driver = null;
+		}
 
 	}
 
