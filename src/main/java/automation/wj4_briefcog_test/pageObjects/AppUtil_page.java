@@ -13,5 +13,7 @@ public class AppUtil_page extends DriverFactory{
 	@FindBy(xpath = "//button[text()='Locations']")
 	WebElement locations;
 
+	
+	
 
 }

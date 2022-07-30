@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 @main
 Feature: verifying the login add examinee and add examiner features
+=======
+Feature: verifying the Wj4 Brief Cog features
+>>>>>>> ff83471e1eb4f5e91bd435603a5648a624f0c3c5
 
 
  
