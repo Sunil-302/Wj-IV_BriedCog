@@ -16,64 +16,17 @@ import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 
 public class PropertyFileUtils {
 
-	public static FileInputStream fis;
-	public static Properties prop;
+	static FileInputStream fis;
+	static Properties prop;	
 
 	public static HashMap<String, String> globalProp = new HashMap<>();
-	
-	public static ArrayList<String> keyList = new ArrayList<>();
-	public static ArrayList<String> valueList = new ArrayList<>();	
-	
-	
-
-	/*
-	 * public static void main(String[] args) {
-	 * 
-	 * try { fis = new FileInputStream(System.getProperty("user.dir") +
-	 * "\\GlobalConfig.properties"); prop = new Properties(); prop.load(fis);
-	 * 
-	 * } catch (FileNotFoundException e) { e.printStackTrace(); } catch (IOException
-	 * e) { e.printStackTrace(); }
-	 * 
-	 * prop.entrySet(); prop.get("browser"); prop.size();
-	 * 
-	 * 
-	 * 
-	 * 
-	 * for(Object i :prop.keySet() ) { keyList.add((String) i);
-	 * 
-	 * }
-	 * 
-	 * for(Object j :prop.values() ) { valueList.add((String) j);
-	 * 
-	 * 
-	 * }
-	 * 
-	 * 
-	 * for (int i = 0; i < prop.size(); i++) { globalProp.put(keyList.get(i),
-	 * valueList.get(i));
-	 * 
-	 * }
-	 * 
-	 * System.out.println(globalProp);
-	 * 
-	 * }
-	 */
-	
-	
-	
-	
-	
-	
-	
 
 	/*
 	 * need to create 2 components if no Key passed return everything in a map KEy
 	 * value pairs If key passed the return that specific value
 	 */
 
-
-	public static HashMap<String, String> getAllProperties(String propertyPath) {
+	static HashMap<String, String> getAllProperties(String propertyPath) {
 		try {
 
 			fis = new FileInputStream(propertyPath);
@@ -86,25 +39,14 @@ public class PropertyFileUtils {
 			e.printStackTrace();
 		}
 
-		for(Object i :prop.keySet() ) {
-			keyList.add((String) i);	
-			
-		}
-		
-		for(Object j :prop.values() ) {
-			valueList.add((String) j);
-			
-		
-		}		
+		for (Object key : prop.keySet()) {
+			globalProp.put((String) key, prop.getProperty((String) key));
 
-		
-		for (int i = 0; i < prop.size(); i++) {
-			globalProp.put(keyList.get(i), valueList.get(i));	
-			
 		}
 
 		return globalProp;
 
 	}
-
+	
+	
 }

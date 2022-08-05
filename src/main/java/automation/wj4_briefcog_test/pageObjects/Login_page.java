@@ -27,24 +27,24 @@ public class Login_page extends DriverFactory {
 
 	/* =====================METHODS=================== */
 
-	public String getTitleofThePage() {
-		return getDriver().getTitle();
-	}
+	
 
-	public void giveUsername() {
-		skUsername.sendKeys(globalProp.get("username"));
+	public void giveUsername(String username) {
+		appUtil.get().letsWait(2000);
+		skUsername.sendKeys(username);
 
 		return;
 	}
 
-	public void givePassword() {
-		skPassword.sendKeys(globalProp.get("password"));
+	public void givePassword(String password) {
+		skPassword.sendKeys(password);
 
 		return;
 	}
 	
 	public void clickOnSignInButton() {
 		ckSignInButton.click();
+		appUtil.get().letsWait(2000);
 		return;
 	}
 
