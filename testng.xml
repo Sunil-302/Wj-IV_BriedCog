@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" data-provider-thread-count="10">
-  <test name="Test">
-  
-  <classes>
-			 <class name="automation.wj4_briefcog_test.runner.testNG_TestRunner"></class>
+<suite name="Suite" data-provider-thread-count="2">
+
+	<listeners>
+		<listener class-name="automation.wj4_briefcog_test.listeners.Listeners" />
+	</listeners>
+
+
+	<test name="Test">
+
+		<classes>
+
+			<class name="automation.wj4_briefcog_test.runner.testNG_TestRunner"></class>
 			<!-- <class name="runner.FailedTestRunner"></class>-->
-			 
+
 		</classes>
-  </test> <!-- Test -->
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

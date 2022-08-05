@@ -9,6 +9,9 @@ import org.openqa.selenium.TakesScreenshot;
 
 import automation.wj4_briefcog_test.utilities.DriverFactory;
 import io.cucumber.java.After;
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 
 public class Hooks extends DriverFactory {
@@ -16,7 +19,9 @@ public class Hooks extends DriverFactory {
 	@After
 	public void tearDown(Scenario scenario) {
 
-		if (driver != null) {
+//		consoleLogger();
+
+		if (getDriver() != null) {
 			if (scenario.isFailed()) {
 				byte[] fileContent = null;
 				File sourcePath = ((TakesScreenshot) getDriver()).getScreenshotAs(OutputType.FILE);
@@ -32,22 +37,27 @@ public class Hooks extends DriverFactory {
 			}
 
 		}
-		
-		
 
-		if (driver == null) {
+		try {
+			closeDriverSession();
 
-		} else if (driver != null) {
-			driver.quit();
-			driver = null;
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
 
 	}
 
-//	@Before
-//	public void tearup() {
-//
-//		getDriver();
-//	}
+	@Before
+	public void setUp() {
+
+	}
+
+	@AfterStep
+	public void doSomethingAfterStep(Scenario scenario) {
+		consoleLogger();
+
+	}
+
+
 
 }

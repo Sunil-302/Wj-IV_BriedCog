@@ -31,8 +31,10 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						<!-- 
 						<parallel>methods</parallel>
 						<threadCount>4</threadCount>
+						-->
 					</configuration>
 
 
